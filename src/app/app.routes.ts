@@ -18,4 +18,8 @@ export const routes: Routes = [
     path: 'post-list',
     loadComponent: () => import('./post-list/post-list.page').then( m => m.PostListPage)
   },
+  {
+    path: 'home',
+    loadComponent: () => import('./home/home.page').then( m => m.HomePage)
+  },
 ];
