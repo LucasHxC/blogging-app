@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { PostItemComponent } from './components/post-item/post-item.component';
 import { BlogService } from './services/blog.service';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [AppComponent, PostItemComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  declarations: [AppComponent],
+  imports: [BrowserModule, IonicModule.forRoot(), SharedModule, AppRoutingModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     BlogService,

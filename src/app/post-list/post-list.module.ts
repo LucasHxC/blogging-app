@@ -1,17 +1,18 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-
 import { PostListPageRoutingModule } from './post-list-routing.module';
 import { PostListPage } from './post-list.page';
-import { PostItemComponent } from '../components/post-item/post-item.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     IonicModule,
+    SharedModule,
     PostListPageRoutingModule
   ],
-  declarations: [PostListPage, PostItemComponent]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  declarations: [PostListPage] // Include the custom component in the declarations
 })
 export class PostListPageModule {}

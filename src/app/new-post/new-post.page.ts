@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { BlogService } from '../services/blog.service';
-import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-new-post',
