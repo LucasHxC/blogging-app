@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AppPostItemComponent } from '../components/post-item/post-item.component';
+import { PostItemModule } from '../components/post-item/post-item.module';
 
 @NgModule({
-  declarations: [AppPostItemComponent],
-  imports: [CommonModule],
-  exports: [AppPostItemComponent]
+  declarations: [],
+  imports: [CommonModule, PostItemModule]
 })
 export class SharedModule { }
