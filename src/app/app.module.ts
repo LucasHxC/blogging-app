@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 
 import { BlogService } from './services/blog.service';
 import { SharedModule } from './shared/shared.module';
+import { PostListPage } from './post-list/post-list.page';
+import { NewPostPage } from './new-post/new-post.page';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [AppComponent],
+  declarations: [AppComponent, PostListPage, NewPostPage],
   imports: [BrowserModule, IonicModule.forRoot(), SharedModule, AppRoutingModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

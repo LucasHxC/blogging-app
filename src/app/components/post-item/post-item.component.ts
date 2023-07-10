@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-post-item',
@@ -31,6 +31,10 @@ export class AppPostItemComponent {
 })
 export class PostListPage {
   posts: any[] = []; // Replace with your actual data
+
+  @NgModule({
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  })
 
   constructor() {
     // Initialize the posts array with data
