@@ -10,11 +10,12 @@ import { SharedModule } from './shared/shared.module';
 import { PostListPage } from './post-list/post-list.page';
 import { NewPostPage } from './new-post/new-post.page';
 import { CommonModule } from '@angular/common';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [AppComponent, PostListPage, NewPostPage],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CommonModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CommonModule, HomeModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     BlogService,
