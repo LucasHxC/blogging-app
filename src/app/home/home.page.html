@@ -7,8 +7,18 @@
 <ion-content>
   <div class="container">
     <h1>Welcome to Your Blogging App</h1>
-    <p>Start sharing your thoughts and ideas with the world!</p>
-    <ion-button routerLink="/new-post" expand="block" color="primary">Create New Post</ion-button>
-    <ion-button routerLink="/post-list" expand="block" color="secondary">View All Posts</ion-button>
+    <p>Start sharing your thoughts and ideas with the world! :)</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3" size-lg="4" offset-lg="4">
+          <ion-button routerLink="/new-post" expand="block" color="primary" (click)="goToNewPostPage()">Create New Post</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3" size-lg="4" offset-lg="4">
+          <ion-button routerLink="/post-list" expand="block" color="secondary" (click)="goToPostListPage()">View All Posts</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
