@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    loadComponent: () => import('./components/home/home.page').then((m) => m.HomePage),
   },
   {
     path: '',
@@ -12,14 +12,14 @@ export const routes: Routes = [
   },
   {
     path: 'new-post',
-    loadComponent: () => import('./new-post/new-post.page').then( m => m.NewPostPage)
+    loadComponent: () => import('./pages/new-post/new-post.page').then( m => m.NewPostPage)
   },
   {
     path: 'post-list',
-    loadComponent: () => import('./post-list/post-list.page').then( m => m.PostListPage)
+    loadComponent: () => import('./pages/post-list/post-list.page').then( m => m.PostListPage)
   },
   {
     path: 'home',
-    loadComponent: () => import('./home/home.page').then( m => m.HomePage)
+    loadComponent: () => import('./components/home/home.page').then( m => m.HomePage)
   },
 ];

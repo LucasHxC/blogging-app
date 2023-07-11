@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 
 import { BlogService } from './services/blog.service';
 import { SharedModule } from './shared/shared.module';
-import { PostListPage } from './post-list/post-list.page';
-import { NewPostPage } from './new-post/new-post.page';
+import { PostListPage } from './pages/post-list/post-list.page';
+import { NewPostPage } from './pages/new-post/new-post.page';
 import { CommonModule } from '@angular/common';
-import { HomeModule } from './home/home.module';
+import { HomeModule } from './components/home/home.module';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

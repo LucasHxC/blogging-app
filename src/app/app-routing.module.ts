@@ -2,9 +2,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomePage } from './home/home.page';
-import { NewPostPage } from './new-post/new-post.page';
-import { PostListPage } from './post-list/post-list.page';
+import { HomePage } from './components/home/home.page';
+import { NewPostPage } from './pages/new-post/new-post.page';
+import { PostListPage } from './pages/post-list/post-list.page';
 
 const routes: Routes = [
   {
