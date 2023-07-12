@@ -4,11 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './components/home/home.page';
 import { NewPostPage } from './pages/new-post/new-post.page';
 import { PostListPage } from './pages/post-list/post-list.page';
+import { TabsPage } from './tabs/tabs.page';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tabs',
     pathMatch: 'full'
   },
   {
@@ -23,7 +24,10 @@ const routes: Routes = [
     path: 'post-list',
     component: PostListPage
   },
-  // Add more routes for other components/pages here
+  {
+    path: 'tabs',
+    component: TabsPage
+  }
 ];
 
 @NgModule({

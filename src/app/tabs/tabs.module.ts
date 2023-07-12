@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -23,6 +23,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [IonicModule, HomePage, RouterModule.forChild(routes)],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [TabsPage, PostListPage]
 })
 export class TabsPageModule {}
